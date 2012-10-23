@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="org.jboss.soa.esb.samples.chapter6.GatewayRecord" table="gateway_table">
+		<id name="id" column="unique_id" type="java.lang.Long" unsaved-value="0">
+			<generator class="identity"/>
+		</id>
+		<property name="data" type="java.lang.String" column="gwdata"/>
+		<property name="status" type="java.lang.String" column="gwstatus"/>
+	</class>
+</hibernate-mapping>

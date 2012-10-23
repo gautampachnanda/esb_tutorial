@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://chapter8.samples.esb.soa.jboss.org/" xmlns:tns="http://chapter8.samples.esb.soa.jboss.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="getAuthorsResponse" type="tns:getAuthorsResponse"/>
+  <xs:element name="getBooksResponse" type="tns:getBooksResponse"/>
+  <xs:complexType name="getBooksResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getAuthorsResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+

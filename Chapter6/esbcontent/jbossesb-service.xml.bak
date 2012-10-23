@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<server>
+   <mbean code="org.jboss.internal.soa.esb.dependencies.DatabaseInitializer"
+       name="jboss.esb.book.samples.database:service=Chapter6SqlDatabaseInitializer">
+      <attribute name="Datasource">java:/Chapter6SqlDB</attribute>
+      <attribute name="ExistsSql">select * from gateway_table</attribute>
+      <attribute name="SqlFiles">create.sql</attribute>
+      <depends>jboss.jca:name=Chapter6SqlDB,service=DataSourceBinding</depends>
+   </mbean>
+</server>

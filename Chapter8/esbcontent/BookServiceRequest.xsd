@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://chapter8.samples.esb.soa.jboss.org/" xmlns:tns="http://chapter8.samples.esb.soa.jboss.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="getAuthors" type="tns:getAuthors"/>
+  <xs:element name="getBooks" type="tns:getBooks"/>
+  <xs:complexType name="getBooks">
+    <xs:sequence/>
+  </xs:complexType>
+  <xs:complexType name="getAuthors">
+    <xs:sequence/>
+  </xs:complexType>
+</xs:schema>
+
